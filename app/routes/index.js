@@ -10,14 +10,13 @@ export default Ember.Route.extend({
       newQuestion.save();
       this.transitionTo('index');
     },
-
-    update(rental, params) {
+    update(question, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
-          rental.set(key,params[key]);
+          question.set(key,params[key]);
         }
       });
-      rental.save();
+      question.save();
       this.transitionTo('index');
     }
   }
