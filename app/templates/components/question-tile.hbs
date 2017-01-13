@@ -6,3 +6,15 @@
   </li>
 </div>
 {{/link-to}}
+
+{{#if isImageShowing}}
+{{update-question question=question update="update"}}
+  <p>
+    true
+  </p>
+{{else}}
+  <button {{action 'imageShow' rental}}>Update</button>
+  <p>
+    goodbye
+  </p>
+{{/if}}

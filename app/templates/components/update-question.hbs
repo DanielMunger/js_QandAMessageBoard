@@ -1,0 +1,15 @@
+<h4>Update {{question.author}}'s question</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="author">Asker</label>
+        {{input value=author id="author" placeholder=question.author}}
+      </div>
+
+      <div class="form-group">
+        <label for="question">Question</label>
+        {{input value=newQuestion id="newQuestion" placeholder=question.question}}
+      </div>
+      <button {{action 'update' question}}>Save</button>
+    </form>
+  </div>
