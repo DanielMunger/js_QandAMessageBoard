@@ -1,19 +1,38 @@
-<div class="question-detail">
-  <p>
-    Q: {{question.content}}
-    Asked By: {{question.author}}
-    <br>
-    A:
-    <ul>
-      {{#each question.answers as |answer|}}
-        {{answer-tile answer=answer}}
-      {{/each}}
-    </ul>
+<div class="col s12 m7">
+   <h2 class="header">Question:</h2>
+   <div class="card horizontal medium">
+     <div class="card-image">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrCZrS3rH0LaBx-XA0zXMMd8VY7lhk40-nFM6FCfgtR01k8sqDTA">
+     </div>
+     <div class="card-stacked">
+        <div class="card-content">
+          <h5>Q: {{question.content}}</h5>
+        </div>
+        <div class="card-action">
+          <a href="#">{{question.author}}</a>
+        </div>
+     </div>
+   </div>
+ </div>
+ <div class="card-stacked">
+   <div class="card-content">
+     <ul>
+       <div class="row">
 
-  </p>
-</div>
-
-
-<!-- {{answer.content}}
-<br>
-Answered By: {{answer.author}} -->
+         {{#each question.answers as |answer|}}
+         <div class="col s12 m6">
+           <div class="card blue-grey darken-1">
+             <div class="card-content white-text">
+               <span class="card-title">Answer:</span>
+               {{answer-tile answer=answer}}
+             </div>
+             <div class="card-action">
+               <a href="#">{{answer.author}}</a>
+             </div>
+           </div>
+         </div>
+         {{/each}}
+       </div>
+     </ul>
+   </div>
+ </div>

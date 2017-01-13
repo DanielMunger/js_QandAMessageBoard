@@ -10,9 +10,10 @@
         <label for="content">Question</label>
         {{input value=content id="content"}}
       </div>
-      <button {{action 'saveQuestion1'}}>Ask!</button>
+      <a {{action 'saveQuestion1'}} class="waves-effect waves-light btn">Ask!</a>
     </form>
   </div>
 {{else}}
-  <button {{action 'questionFormShow'}}>New Question</button>
+
+  <a {{action 'questionFormShow'}} class="waves-effect waves-light btn">New Question</a>
 {{/if}}

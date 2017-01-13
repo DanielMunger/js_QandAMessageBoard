@@ -1,4 +1,18 @@
-.question {
+/*.question {
   height: 100px;
   width: 100px;
+}*/
+body {
+  padding: 10px;
+  background-color: lightgrey;
+}
+.btn {
+  margin: 3px;
+  margin-left: 10px;
+}
+.horizontal {
+  margin-left: 10px;
+}
+.nav-wrapper {
+  background-color: #26a69a;
 }
