@@ -1,0 +1,19 @@
+<div class="question-detail">
+  <p>
+    Q: {{question.content}}
+    Asked By: {{question.author}}
+    <br>
+    A:
+    <ul>
+      {{#each question.answers as |answer|}}
+        {{answer-tile answer=answer}}
+      {{/each}}
+    </ul>
+
+  </p>
+</div>
+
+
+<!-- {{answer.content}}
+<br>
+Answered By: {{answer.author}} -->
